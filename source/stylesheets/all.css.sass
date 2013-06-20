@@ -1,0 +1,49 @@
+@import bourbon/bourbon
+
+$animation-time: 3s
+
+*
+  +box-sizing (border-box)
+
+body
+  width: 100%
+  overflow: hidden
+
+.social
+  margin: 300px auto 0
+  +clearfix
+  width: 100%
+  max-width: 282px
+
+.twit-div
+  +animation (flight $animation-time linear)
+
+.twitter
+  position: relative
+  top: 4px
+  background: image-url('twitter.png')
+
+.octo-div
+  +animation (octocat $animation-time linear)
+
+.octocat
+  background: image-url('octocat.png')
+  +animation (walk .18s linear 17)
+
+.drib-div
+
+.dribbble
+  background: image-url('dribbble.png')
+  +animation (bounce $animation-time)
+
+.twit-div, .drib-div, .octo-div
+  float: left
+  width: 33.333%
+
+.twitter, .octocat, .dribbble
+  +size (38px)
+  margin: auto
+  background-repeat: no-repeat
+  background-size: 100%
+
+@import keyframes
