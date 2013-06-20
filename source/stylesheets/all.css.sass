@@ -22,16 +22,19 @@ body
   position: relative
   top: 4px
   background: image-url('twitter.png')
+  background-size: 100%
 
 .octo-div
   +animation (octocat $animation-time linear)
 
 .octocat
   background: image-url('octocat.png')
+  background-size: 100%
   +animation (walk .18s linear 17)
 
 .dribbble
   background: image-url('dribbble.png')
+  background-size: 100%
   +animation (bounce $animation-time)
 
 .twit-div, .drib-div, .octo-div
@@ -42,6 +45,5 @@ body
   +size (38px)
   margin: auto
   background-repeat: no-repeat
-  background-size: 100%
 
 @import keyframes
